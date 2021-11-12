@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+    <form action="">
+        <h2>Registration Form</h2>
+        <p>Name:<input type="text" name="name" placeholder="First Name" required> <input type="text" name="name" placeholder="Last Name" required></p>
+        <p>Father Name: <input type="text" name="father name" placeholder="Father Name" required></p>
+        <p> 
+            <fieldset required>
+                <legend>Gender</legend>
+                Male <input type="radio" name="gender">Female <input type="radio" name="gender">
+            </fieldset>
+        </p>
+        <p>Cnic / Bform <input type="cnic" name="cnic" placeholder="12345-6789123-1" required></p>
+        <p>Contact Number <input type="number" name="contact name" placeholder="123456789" required></p>
+        <p>Email <input type="email" name=" email" placeholder="ahmedali@gmail.com" required></p>
+        <p>Password: <input type="password" name="password" placeholder="password" required></p>
+        <p>Address: <textarea name="address" id="address" cols="50" rows="4" placeholder="Enter the parmanent address here"></textarea></p>
+        <p>City:
+            <select name="city" id="city" required>
+                <option value="">--Select the City</option>
+                <option value="Islambad">Islambad</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Multan">Multan</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Karachi">Karachi</option>
+            </select>
+        </p>
+        
+        <p>Date-of-Birth: <input type="date" name="date" required></p>
+        <label>Upload Course
+            <input type="file" name="Choose File">
+        </label>
+        <br>
+        <br>
+        <button>Submit</button>
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="feedbackstyle.css">
+<script type="text/javascript" src="jquery.js">
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $("#feedback_button").click(function(){
+    form();
+  });
+});
+	
+function form()
+{
+  $("form").slideToggle();
+}
+</script>
+
+</head>
+
+<body>
+
+    <!-- Start Navigation  -->
+    <section class="section1">
+        <header>
+            <nav class="navigation">
+                <a class="navbar-brand" href="#">WebUni</a>
+                <p>Learn From The Best</p>
+                <div class="navbar">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="About.html">About Us</a>
+                        </li>
+                        <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Courses 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="course1.html">IT Development</a>
+                              <a href="Adobe.html">Adobe</a>
+                              <a href="Webdevelopment.html">Web Design</a>
+                              <a href="">Social Media</a>
+                            </div>
+                        </div> 
+                        </li>  
+                        <li class="nav-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="feedback.html">Feedback</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="signup.html">Signup</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- End Navigation  -->
+
+
+  <div id="form">
+    <p id="feedback_button">Feedback</p>
+    
+	<form method="post" action="">
+      <input type="text" id="name" placeholder="Name">
+      <br>
+      <br>
+      <input type="text" id="email" placeholder="Email">
+      <br>
+      <br>
+      <textarea id="feedback" placeholder="Feedback"></textarea>
+      <br>
+      <br>
+      <input type="submit" id="submit_feedback" values="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
